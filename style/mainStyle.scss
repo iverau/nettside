@@ -1,0 +1,88 @@
+// Colors:
+$blue: #77C9D4;
+$forest: #015249;
+$marine: #57BC90;
+$grey: #A5A5AF;
+$white: #FFFFFF;
+
+// heights and widths
+$topHeight: 10vh;
+$bottomHeight: 10vh;
+$contentHeight: 100vh - $bottomHeight - $topHeight;
+$headButtonWidth: 10vw;
+
+
+body {
+   
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#denne {
+    
+    font-size: 34px;
+    background-color: black;
+}
+
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+
+}
+
+header {
+    background-color: $white;
+    min-width: 100%;
+    min-height: $topHeight;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.headButton {
+    width: $headButtonWidth;
+    text-align: center;
+    height: $topHeight;
+    line-height: $topHeight;
+}
+
+.headButton:hover {
+    background-color: $blue;
+}
+
+
+.side {
+    min-height: $contentHeight;
+    flex: 0%;
+    background-color: $white;
+}
+
+section {
+    background-image: radial-gradient($forest,$blue);
+    width: 100px;
+    flex:100%;
+    min-height: $contentHeight;
+    opacity: 0.5;
+    margin-left: 10vw;
+    
+}
+
+footer{
+    background-color: $blue;
+    flex: 100%;
+    min-height: $bottomHeight;
+}
+
