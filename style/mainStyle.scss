@@ -9,28 +9,23 @@ $white: #FFFFFF;
 $topHeight: 10vh;
 $bottomHeight: 10vh;
 $contentHeight: 100vh - $bottomHeight - $topHeight;
-$headButtonWidth: 10vw;
 
+$headButtonWidth: 10vw;
+$headTitleWidth: 20vw;
+$emptySpaceWidth: 100vw - 3*$headButtonWidth - $headTitleWidth;
+
+$postHeight: 20vw;
+$postWidth: 20vw;
+$postMargin: 6vw;
+
+
+
+// The whole body
 
 body {
    
     margin: 0px;
     padding: 0px;
-    
-}
-
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-#denne {
-    
-    font-size: 34px;
-    background-color: black;
-}
-
-.pageWrapper {
     display: flex;
     flex-direction: column;
     
@@ -42,6 +37,9 @@ a:link {
 
 }
 
+
+// Header of page
+
 header {
     background-color: $white;
     min-width: 100%;
@@ -52,7 +50,27 @@ header {
 
 }
 
+
+#emptySpace{
+    width: $emptySpaceWidth;
+}
+
+#titleContainer{
+    display: flex;
+    align-items: center;
+}
+
+#titleBar{
+    text-align: right;
+
+    vertical-align: bottom;
+    width: $headTitleWidth;
+    font-size: 50px;
+    
+}
+
 .headButton {
+    font-size: 30px;
     width: $headButtonWidth;
     text-align: center;
     height: $topHeight;
@@ -64,21 +82,33 @@ header {
 }
 
 
+
+// Content of the page
+
 .side {
     min-height: $contentHeight;
-    flex: 0%;
+    flex: $headButtonWidth;
     background-color: $white;
 }
 
 section {
     background-image: radial-gradient($forest,$blue);
     width: 100px;
-    flex:100%;
+    flex: 100vw - 2*$headButtonWidth;
     min-height: $contentHeight;
     opacity: 0.5;
-    margin-left: 10vw;
     
 }
+
+.post {
+    margin-left: $postMargin;
+    background-color: $blue;
+    height: $postHeight;
+    width: $postWidth; 
+}
+
+
+// Bottom of the page
 
 footer{
     background-color: $blue;
