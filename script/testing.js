@@ -1,5 +1,3 @@
-
-
 function test(){
     document.getElementById("denne").innerHTML = "Jaja";
 }
@@ -17,4 +15,12 @@ function getLocation() {
   function showPosition(position) {
     document.getElementById("denne").innerHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
+  }
+
+  function thirdPost(){
+      document.location = "file:///C:/repo/web/pages/aboutMe.html";
+  }
+
+  function logoPress(){
+      document.location = "index.html";
   }

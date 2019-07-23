@@ -2,7 +2,8 @@ body {
   margin: 0px;
   padding: 0px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow: hidden; }
 
 .mainContent {
   display: flex;
@@ -14,6 +15,10 @@ header {
   min-height: 10vh;
   display: flex;
   flex-direction: row-reverse; }
+
+#logo {
+  height: 10vh;
+  overflow: hidden; }
 
 #emptySpace {
   width: 50vw; }
@@ -35,28 +40,38 @@ header {
   height: 10vh;
   line-height: 10vh; }
 
-.headButton:hover {
-  background-color: #77C9D4; }
-
 .side {
   min-height: 80vh;
   flex: 10vw;
   background-color: #FFFFFF; }
 
 section {
-  background-image: radial-gradient(#015249, #77C9D4);
+  display: flex;
   width: 100px;
   flex: 80vw;
   min-height: 80vh;
-  opacity: 0.5; }
+  flex-direction: row; }
 
 .post {
+  margin-top: 6vw;
   margin-left: 6vw;
-  background-color: #77C9D4;
-  height: 20vw;
+  background-color: black;
+  height: 35vw;
   width: 20vw; }
 
+.postPhoto {
+  height: 90%;
+  width: 100%;
+  padding: 0; }
+
+.postDescription {
+  color: #FFFFFF;
+  height: 7.5%;
+  margin-top: 2.5%;
+  text-align: center;
+  font-size: 3vh; }
+
 footer {
-  background-color: #77C9D4;
+  background-color: black;
   flex: 100%;
   min-height: 10vh; }

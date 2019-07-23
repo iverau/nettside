@@ -1,5 +1,11 @@
 // Colors:
-$blue: #77C9D4;
+$blue:  #181AAA;
+$lightBlue : #8284FF;
+$purple : #696BFF;
+$brown : #B39825;
+$yellow : #FFE369;
+
+
 $forest: #015249;
 $marine: #57BC90;
 $grey: #A5A5AF;
@@ -14,7 +20,7 @@ $headButtonWidth: 10vw;
 $headTitleWidth: 20vw;
 $emptySpaceWidth: 100vw - 3*$headButtonWidth - $headTitleWidth;
 
-$postHeight: 20vw;
+$postHeight: 35vw;
 $postWidth: 20vw;
 $postMargin: 6vw;
 
@@ -28,7 +34,7 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    
+    overflow: hidden;
 }
 
 .mainContent {
@@ -50,6 +56,10 @@ header {
 
 }
 
+#logo {
+    height: $topHeight;
+    overflow: hidden;
+}
 
 #emptySpace{
     width: $emptySpaceWidth;
@@ -77,9 +87,6 @@ header {
     line-height: $topHeight;
 }
 
-.headButton:hover {
-    background-color: $blue;
-}
 
 
 
@@ -92,26 +99,43 @@ header {
 }
 
 section {
-    background-image: radial-gradient($forest,$blue);
+    //background-color: $lightBlue;
+    display: flex;
     width: 100px;
     flex: 100vw - 2*$headButtonWidth;
     min-height: $contentHeight;
-    opacity: 0.5;
+    flex-direction: row;
     
 }
 
 .post {
+    margin-top: $postMargin;
     margin-left: $postMargin;
-    background-color: $blue;
+    background-color: black;
     height: $postHeight;
     width: $postWidth; 
 }
 
+.postPhoto {
+    height: 90%;
+    width: 100%;
+    padding: 0;
+}
+
+.postDescription{
+    //background-color: $brown;
+    color: $white;
+    height: 7.5%;
+    margin-top: 2.5%;
+    text-align: center;
+    font-size: 3vh;
+    
+}
 
 // Bottom of the page
 
 footer{
-    background-color: $blue;
+    background-color: black;
     flex: 100%;
     min-height: $bottomHeight;
 }
