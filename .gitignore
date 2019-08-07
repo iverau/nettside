@@ -1,3 +1,4 @@
 .sass-cache/
 *.css.map
 django_project/startServer.bat
+flask_project/makefile
