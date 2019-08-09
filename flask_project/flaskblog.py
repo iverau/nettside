@@ -12,7 +12,7 @@ posts = [
     {
         'author': "Knut",
         'title': "Post 2",
-        'content': "Second post content",
+        'content': "Second post contentSecond post contentSecond post contentSecond post contentSecond post contentSecond post contentSecond post contentSecond post contentSecond post contentSecond post contentSecond post contentSecond post contentSecond post content",
         'date_posted': 'April 20, 2018'
     }
     
